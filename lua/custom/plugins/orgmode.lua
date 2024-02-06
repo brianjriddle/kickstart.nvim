@@ -8,21 +8,26 @@ return {
   config = function()
     -- Load treesitter grammar for org
     require('orgmode').setup_ts_grammar()
-    require('org-bullets').setup()
-
-    -- Setup treesitter
-    require('nvim-treesitter.configs').setup({
-      highlight = {
-        enable = true,
-        additional_vim_regex_highlighting = { 'org' },
-      },
-      ensure_installed = { 'org' },
-    })
+    require('org-bullets').setup {} 
 
     -- Setup orgmode
     require('orgmode').setup({
-      org_agenda_files = '~/org/journal/**/*',
-    --  org_default_notes_file = '~/orgfiles/refile.org',
+      org_agenda_files = '~/org/journal/*',
+      org_default_notes_file = '~/org/journal.org',
+      org_startup_folded = 'showeverything',
+      org_capture_templates = {
+        b = {
+          description= 'Blank',
+          template = '** %?',
+          target = '~/org/journal/journal.org'
+        },
+        j = {
+          description = 'Jira ticket',
+          template = '** TODO JIRA [[https://jira.avanza.se/browse/%^{Issue}]] :jira: \n%?',
+          target = '~/org/journal/journal.org'
+        }
+      }
+
     })
   end,
 }
