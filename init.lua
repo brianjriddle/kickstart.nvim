@@ -456,6 +456,7 @@ vim.defer_fn(function()
       'go',
       'javascript',
       'lua',
+      'org',
       'python',
       'rust',
       'tsx',
@@ -473,7 +474,9 @@ vim.defer_fn(function()
     ignore_install = {},
     -- You can specify additional Treesitter modules here: -- For example: -- playground = {--enable = true,-- },
     modules = {},
-    highlight = { enable = true },
+    highlight = {
+      enable = true,
+      additional_vim_regex_highlighting = 'org'},
     indent = { enable = true },
     incremental_selection = {
       enable = true,
