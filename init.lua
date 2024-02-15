@@ -208,7 +208,7 @@ require('lazy').setup({
     config = function()
       require('onedark').setup {
         -- Set a style preset. 'dark' is default.
-        style = 'dark', -- dark, darker, cool, deep, warm, warmer, light
+        style = 'darker', -- dark, darker, cool, deep, warm, warmer, light
       }
       require('onedark').load()
     end,
@@ -476,7 +476,8 @@ vim.defer_fn(function()
     modules = {},
     highlight = {
       enable = true,
-      additional_vim_regex_highlighting = 'org'},
+      additional_vim_regex_highlighting = 'org'
+    },
     indent = { enable = true },
     incremental_selection = {
       enable = true,
