@@ -1,3 +1,5 @@
+-- Dismiss Noice Message
+vim.keymap.set("n", "<leader>nd", "<cmd>NoiceDismiss<CR>", {desc = "Dismiss Noice Message"})
 return {
   "folke/noice.nvim",
   event = "VeryLazy",
