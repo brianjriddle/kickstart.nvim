@@ -12,8 +12,8 @@ return {
 
     -- Setup orgmode
     require('orgmode').setup({
-      org_agenda_files = '~/org/journal/*',
-      org_default_notes_file = '~/org/journal.org',
+      org_agenda_files = {'~/org/journal/*','~/org/*'},
+      org_default_notes_file = '~/org/journal/journal.org',
       org_archive_location = '~/org/journal/journal.org_archive',
       org_startup_folded = 'showeverything',
       org_capture_templates = {
