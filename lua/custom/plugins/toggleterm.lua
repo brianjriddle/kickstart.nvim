@@ -1,11 +1,8 @@
 return {
    {'akinsho/toggleterm.nvim',
       version = "*",
-      config = true,
+      opts = {
+         open_mapping = [[<a-t>]],
+      },
    },
-   require('which-key').register {
-      ["<leader>t"] = {
-         t = {"<cmd>ToggleTerm<cr>", "Toggle terminal"}
-      }
-   }
 }
