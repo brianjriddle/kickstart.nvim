@@ -665,7 +665,7 @@ mason_lspconfig.setup_handlers {
 local cmp = require 'cmp'
 local luasnip = require 'luasnip'
 require('luasnip.loaders.from_vscode').lazy_load()
-require('luasnip.loaders.from_vscode').load_standalone({path ="~/.code-snippets"})
+require('luasnip.loaders.from_vscode').load_standalone({path ="~/.code-snippets.vscode.json"})
 luasnip.config.setup {}
 
 cmp.setup {
