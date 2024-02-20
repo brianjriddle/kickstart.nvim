@@ -17,12 +17,12 @@ return {
       org_archive_location = '~/org/journal/journal.org_archive',
       org_startup_folded = 'showeverything',
       org_capture_templates = {
-        b = {
-          description= 'Blank',
-          template = '** %?',
+        t = {
+          description= 'TODO',
+          template = '\n*** TODO %?',
           target = '~/org/journal/journal.org'
         },
-      }
+      },
     })
   end,
 }
