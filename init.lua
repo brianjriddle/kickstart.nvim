@@ -456,8 +456,11 @@ vim.defer_fn(function()
       'go',
       'javascript',
       'lua',
+      'markdown',
+      'markdown_inline',
       'org',
       'python',
+      'regex',
       'rust',
       'tsx',
       'typescript',
@@ -662,6 +665,7 @@ mason_lspconfig.setup_handlers {
 local cmp = require 'cmp'
 local luasnip = require 'luasnip'
 require('luasnip.loaders.from_vscode').lazy_load()
+require('luasnip.loaders.from_vscode').load_standalone({path ="~/.code-snippets"})
 luasnip.config.setup {}
 
 cmp.setup {

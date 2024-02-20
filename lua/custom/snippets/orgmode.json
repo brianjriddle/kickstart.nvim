@@ -1,8 +1,0 @@
-{
-	"jira" :{
-		body: "** TODO JIRA [[https://jira.avanza.se/browse/%^{Issue}][%\\1]] %? :jira:"	
-	},
-	"date heading" : {
-		body: "**"
-	}
-}
