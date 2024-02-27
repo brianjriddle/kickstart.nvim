@@ -2,5 +2,7 @@
 --  I promise not to create any merge conflicts in this directory :)
 --
 -- See the kickstart.nvim README for more information
-vim.filetype.add({ extension = { templ = "templ" } })
+vim.opt.relativenumber = true
+vim.opt.scrolloff = 999
+vim.filetype.add { extension = { templ = 'templ' } }
 return {}
