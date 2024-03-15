@@ -2,7 +2,7 @@ return {
   'nvim-orgmode/orgmode',
   dependencies = {
     { 'nvim-treesitter/nvim-treesitter', lazy = true },
-    { 'brianjriddle/org-bullets.nvim', lazy = true },
+    { 'nvim-orgmode/org-bullets.nvim', lazy = true },
   },
   event = 'VeryLazy',
   config = function()
